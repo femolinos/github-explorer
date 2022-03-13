@@ -1,0 +1,28 @@
+.headerContainer {
+  max-width: 1120px;
+  height: 7rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    display: flex;
+    border: none;
+    background-color: inherit;
+
+    img {
+      align-items: center;
+      justify-content: center;
+      margin: auto 0;
+    }
+
+    p {
+      margin-left: 0.5rem;
+      font-weight: bold;
+      color: #A8A8B3;
+    }
+  }
+}
