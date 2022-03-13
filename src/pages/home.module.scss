@@ -35,6 +35,11 @@
     width: calc(100vw - 70%);
   }
 
+  input[type="text"]::placeholder {
+    color: #A8A8B3;
+    font-size: 18px;
+  }
+
   button {
     height: 4rem;
     padding: 1rem 1.5rem;
@@ -46,6 +51,8 @@
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+
+    font-size: 18px;
 
     transition: filter .2s;
 
