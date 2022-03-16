@@ -1,3 +1,4 @@
+import Router from 'next/router';
 import styles from './styles.module.scss';
 
 interface HeaderProps {
@@ -12,7 +13,7 @@ export function Header({ isUser }: HeaderProps) {
       {
         isUser ? 
         <div>
-          <button type="button">
+          <button type="button" onClick={() => { Router.push('/') }}>
             <img src="/images/back-arrow.svg" alt="Back" />
             <p>Back</p>
           </button>

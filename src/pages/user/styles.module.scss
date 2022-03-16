@@ -1,0 +1,61 @@
+.userContent {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: calc(100vh - 7rem);
+
+  align-items: center;
+
+  section {
+    margin-top: 5rem;
+    margin-left: 2rem;
+
+    display: flex;
+    flex-direction: row;
+
+    img {
+      height: 8rem;
+
+      border-radius: 50%;
+    }
+
+    div {
+      margin: auto 2rem;
+
+      h1 {
+        font-size: 36px;
+        color: #3D3D4D;
+      }
+
+      p {
+        font-size: 20px;
+        color: #737380;
+
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  .githubInteractions {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 6rem;
+  
+    div + div {
+      margin-left: 5rem;
+    }
+
+    h2 {
+      font-size: 36px;
+      color: #3D3D4D;
+    }
+
+    p {
+      font-size: 20px;
+      color: #6C6C80;
+    }
+  }
+}

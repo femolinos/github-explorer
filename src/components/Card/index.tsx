@@ -1,3 +1,5 @@
+import Router from 'next/router';
+
 import styles from './styles.module.scss';
 
 export function Card() {
@@ -12,7 +14,7 @@ export function Card() {
         </div>
       </div>
 
-      <button type="button">
+      <button type="button" onClick={() => {Router.push('/user')}}>
         <img src="/images/back-arrow.svg" alt="Redirect to Repo" />
       </button>
     </div>
