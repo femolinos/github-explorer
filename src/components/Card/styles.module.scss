@@ -1,0 +1,53 @@
+.cardContainer {
+  width: 50rem;
+  max-height: 8rem;
+
+  background-color: #FFFFFF;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 2rem 0 2rem 0;
+  padding: 2rem;
+  border: none;
+
+  border-radius: 5px;
+  
+  .repoInfos {
+    display: flex;
+
+    flex-direction: row;
+
+    img {
+      height: 6rem;
+      border-radius: 50%;
+    }
+
+    div {
+      margin: auto 0 auto 1rem;
+    }
+
+    div > p:first-child {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      font-size: 24px;
+      color: #3D3D4D;
+    }
+
+    div > p:last-child {
+      font-size: 18px;
+      color: #A8A8B3;
+    }
+  }
+
+  button {
+    border: none;
+    background-color: inherit;
+    padding: 1rem;
+  }
+
+  img:last-child {
+    transform: rotate(180deg)
+  }
+}

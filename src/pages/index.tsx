@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Card } from "../components/Card";
 import { Header } from "../components/Header";
 
 import styles from './home.module.scss';
@@ -23,6 +24,10 @@ export default function Home() {
           <button type="button">
             Search
           </button>
+        </div>
+
+        <div>
+          <Card />
         </div>
       </section>
     </div>
