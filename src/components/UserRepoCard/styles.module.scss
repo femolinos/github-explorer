@@ -36,10 +36,11 @@
     }
   }
 
-  button {
+  a {
     border: none;
     background-color: inherit;
     padding: 1rem;
+    cursor: pointer;
   }
 
   img:last-child {

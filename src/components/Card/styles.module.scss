@@ -33,6 +33,18 @@
       font-weight: bold;
       font-size: 24px;
       color: #3D3D4D;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+    div > span {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      font-size: 24px;
+      color: #3D3D4D;
     }
 
     div > p:last-child {
@@ -41,7 +53,7 @@
     }
   }
 
-  button {
+  a:last-child {
     border: none;
     background-color: inherit;
     padding: 1rem;

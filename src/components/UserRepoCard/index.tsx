@@ -1,18 +1,18 @@
 import styles from './styles.module.scss';
 
-export function UserRepoCard() {
+export function UserRepoCard({repo}: any) {
   return(
     <div className={styles.cardContainer}>
       <div className={styles.repoInfos}>
         <div>
-          <p>repo-react-js</p>
-          <p>Felipe Molinos</p>
+          <p>{ repo.name }</p>
+          <p>{ repo.owner.login }</p>
         </div>
       </div>
 
-      <button type="button">
+      <a href={`https://github.com/${repo.full_name}`} target="_blank" rel="noreferrer">
         <img src="/images/back-arrow.svg" alt="Redirect to Github repo" />
-      </button>
+      </a>
     </div>
   );
 }
