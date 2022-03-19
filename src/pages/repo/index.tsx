@@ -22,10 +22,6 @@ export default function Repo() {
       const repoIssues = await (await axios.get(`https://api.github.com/repos/${username}/${repoName}/issues`)).data;
       const userRepositories = await (await axios.get(`https://api.github.com/users/${username}/repos`)).data;
 
-      console.log(repo);
-      console.log(repoIssues);
-      console.log(userRepositories);
-
       setRepo(repo);
       setIssues(repoIssues);
       setUserRepos(userRepositories);

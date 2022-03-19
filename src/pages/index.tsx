@@ -13,11 +13,20 @@ interface Repos {
 
 export default function Home() {
   const [repos, setRepos] = useState<Repos[]>([]);
+  const [repoQuery, setRepoQuery] = useState('');
+
+  function handleRepoQueryChange(event: any) {
+    setRepoQuery(event.target.value);
+  }
+
+  async function handleRepoQuery() {
+    const result = await (await axios.get(`https://api.github.com/users/${repoQuery}/repos`)).data;
+
+    setRepos(result);
+  }
 
   async function getRepo() {
     const repos = await (await axios.get('https://api.github.com/repositories')).data;
-
-    console.log(repos[16]);
 
     setRepos(repos);
   }
@@ -41,18 +50,20 @@ export default function Home() {
         </h1>
 
         <div className={styles.inputSection}>
-          <input type="text" placeholder="Type here" />
-          <button type="button">
+          <input type="text" placeholder="Type username here" value={repoQuery} onChange={evt => handleRepoQueryChange(evt)} />
+          <button type="button" onClick={handleRepoQuery}>
             Search
           </button>
         </div>
 
         {
-          repos.map(repo => {
-            return(
-              <Card key={repo.id} repo={repo} />
-            );
-          })
+          repos.length > 0 ? 
+            repos.map(repo => {
+              return(
+                <Card key={repo.id} repo={repo} />
+              );
+            })
+            : <h1>Sorry, your filter didn't match any Github user :(</h1>
         }
       </section>
     </div>
