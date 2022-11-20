@@ -1,4 +1,5 @@
 import axios from "axios";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
@@ -42,6 +43,10 @@ export default function Repo() {
 
   return (
     <div className={styles.userContent}>
+      <Head>
+        <title>{repo.full_name} | Github Explorer</title>
+      </Head>
+
       <Header isUser />
 
       <section>
