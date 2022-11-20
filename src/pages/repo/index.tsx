@@ -30,6 +30,8 @@ export default function Repo() {
         await axios.get(`https://api.github.com/users/${username}/repos`)
       ).data;
 
+      console.log(repo);
+
       setRepo(repo);
       setIssues(repoIssues);
       setUserRepos(userRepositories);
@@ -65,6 +67,8 @@ export default function Repo() {
           <p>Open issues</p>
         </div>
       </div>
+
+      <h1>Other {repo?.owner?.login} repos</h1>
 
       {userRepos.map((repo) => {
         return <UserRepoCard key={repo.id} repo={repo} />;

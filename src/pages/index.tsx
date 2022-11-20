@@ -20,11 +20,19 @@ export default function Home() {
   }
 
   async function handleRepoQuery() {
-    const result = await (
-      await axios.get(`https://api.github.com/users/${repoQuery}/repos`)
-    ).data;
+    if (repoQuery.trim() !== "") {
+      try {
+        const result = await axios.get(
+          `https://api.github.com/users/${repoQuery}/repos`
+        );
 
-    setRepos(result);
+        setRepos(result.data);
+      } catch (err) {
+        setRepos([]);
+      }
+    } else {
+      getRepo();
+    }
   }
 
   async function getRepo() {
@@ -70,7 +78,9 @@ export default function Home() {
             return <Card key={repo.id} repo={repo} />;
           })
         ) : (
-          <h1>Sorry, your filter didn't match any Github user :(</h1>
+          <h1>
+            Sorry, your filter {`didn't`} match any Github user {":("}
+          </h1>
         )}
       </section>
     </div>
