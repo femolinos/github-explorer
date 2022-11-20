@@ -19,6 +19,16 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .homeContent {
+    padding: 0 1rem;
+
+    section {
+      margin-left: 0;
+    }
+  }
+}
+
 .inputSection {
   margin: 3rem 0 8rem 0;
   align-items: left;

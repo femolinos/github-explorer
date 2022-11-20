@@ -65,3 +65,30 @@
     }
   }
 }
+
+@media screen and (max-width: 425px) {
+  .userContent {
+    padding: 0 1rem;
+
+    section {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      margin-left: 0;
+
+      img {
+        width: fit-content;
+      }
+
+      div {
+        margin-top: 1rem;
+
+        h1,
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

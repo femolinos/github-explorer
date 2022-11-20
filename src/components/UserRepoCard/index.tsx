@@ -5,7 +5,11 @@ export function UserRepoCard({ repo }: any) {
     <div className={styles.cardContainer}>
       <div className={styles.repoInfos}>
         <div>
-          <p>{repo.name}</p>
+          <p>
+            {repo.name.length > 20
+              ? repo.name.substring(0, 19) + "..."
+              : repo.name}
+          </p>
           <p>{repo.owner.login}</p>
         </div>
       </div>

@@ -63,3 +63,27 @@
     transform: rotate(180deg);
   }
 }
+
+@media screen and (max-width: 425px) {
+  .cardContainer {
+    width: 100%;
+    max-height: fit-content;
+
+    .repoInfos {
+      flex-direction: column;
+      max-width: 80%;
+
+      img {
+        width: fit-content;
+      }
+
+      p:first-child {
+        margin-top: 2rem;
+      }
+
+      p:last-child {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

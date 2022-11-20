@@ -31,8 +31,6 @@ export default function Repo() {
         await axios.get(`https://api.github.com/users/${username}/repos`)
       ).data;
 
-      console.log(repo);
-
       setRepo(repo);
       setIssues(repoIssues);
       setUserRepos(userRepositories);
@@ -53,7 +51,7 @@ export default function Repo() {
         <img src={repo?.owner?.avatar_url} alt="User Avatar" />
 
         <div>
-          <h1>{repo.full_name}</h1>
+          <h1>{repo.name}</h1>
           <p>{repo.description}</p>
         </div>
       </section>

@@ -47,3 +47,9 @@
     transform: rotate(180deg);
   }
 }
+
+@media screen and (max-width: 425px) {
+  .repoInfos {
+    max-width: 80%;
+  }
+}

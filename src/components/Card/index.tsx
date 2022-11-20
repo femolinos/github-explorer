@@ -17,8 +17,9 @@ export function Card({ repo }: any) {
 
         <div>
           <p onClick={handleUserRedirect}>
-            {repo.owner.login}
-            <span>/{repo.name}</span>
+            {repo.full_name.length > 20
+              ? repo.full_name.substring(0, 19) + "..."
+              : repo.full_name}
           </p>
           <p>
             {repo.description !== null ? repo.description : "No description"}
