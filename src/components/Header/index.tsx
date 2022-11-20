@@ -1,25 +1,28 @@
-import Router from 'next/router';
-import styles from './styles.module.scss';
+import Router from "next/router";
+import styles from "./styles.module.scss";
 
 interface HeaderProps {
   isUser?: boolean;
 }
 
 export function Header({ isUser }: HeaderProps) {
-  return(
+  return (
     <div className={styles.headerContainer}>
       <img src="/images/logo.svg" alt="Logo Github Explorer" />
 
-      {
-        isUser ? 
+      {isUser ? (
         <div>
-          <button type="button" onClick={() => { Router.push('/') }}>
+          <button
+            type="button"
+            onClick={() => {
+              Router.push("/");
+            }}
+          >
             <img src="/images/back-arrow.svg" alt="Back" />
             <p>Back</p>
           </button>
         </div>
-        : null
-      }
+      ) : null}
     </div>
   );
 }

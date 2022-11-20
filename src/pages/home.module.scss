@@ -13,7 +13,7 @@
 
   h1 {
     font-size: 48px;
-    color: #3A3A3A;
+    color: #3a3a3a;
 
     margin-top: 5rem;
   }
@@ -38,7 +38,7 @@
   }
 
   input[type="text"]::placeholder {
-    color: #A8A8B3;
+    color: #a8a8b3;
     font-size: 18px;
   }
 
@@ -47,16 +47,16 @@
     padding: 1rem 1.5rem;
     width: 10rem;
 
-    background-color: #04D361;
-    color: #FFFFFF;
-    
+    background-color: #04d361;
+    color: #ffffff;
+
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 
     font-size: 18px;
 
-    transition: filter .2s;
+    transition: filter 0.2s;
 
     &:hover {
       filter: brightness(0.9);

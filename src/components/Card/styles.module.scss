@@ -2,7 +2,7 @@
   width: 90%;
   max-height: 8rem;
 
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 
   display: flex;
   align-items: center;
@@ -13,7 +13,7 @@
   border: none;
 
   border-radius: 5px;
-  
+
   .repoInfos {
     display: flex;
 
@@ -32,7 +32,7 @@
       margin-bottom: 0.5rem;
       font-weight: bold;
       font-size: 24px;
-      color: #3D3D4D;
+      color: #3d3d4d;
 
       &:hover {
         text-decoration: underline;
@@ -44,12 +44,12 @@
       margin-bottom: 0.5rem;
       font-weight: bold;
       font-size: 24px;
-      color: #3D3D4D;
+      color: #3d3d4d;
     }
 
     div > p:last-child {
       font-size: 18px;
-      color: #A8A8B3;
+      color: #a8a8b3;
     }
   }
 
@@ -60,6 +60,6 @@
   }
 
   img:last-child {
-    transform: rotate(180deg)
+    transform: rotate(180deg);
   }
 }
