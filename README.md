@@ -1,6 +1,6 @@
 ## Introduction
 
-Github Explorer is an application developed with the purpose of looking for Github repositories of any user in an easy and fast way. You can simply type the username you want to look up, and the application will list all the user's repositories. Also, you can check the repositorie's details, such as stars, forks and issues, and visit the repository on Github as well.
+Github Explorer is an application developed with the purpose of looking for Github repositories of any user in an easy and fast way. You can simply type the username you want to look up, and the application will list all the user's repositories. Also, you can check the repositorie's details, such as stars, forks and issues, and visit the repository on Github as well. The layout was developed by [Rocketseat](https://www.rocketseat.com.br).
 
 ## Techs used
 
@@ -10,6 +10,7 @@ For this project, I used the following technologies:
 - [Next.js](https://nextjs.org);
 - [Typescript](https://www.typescriptlang.org);
 - [SASS](https://sass-lang.com);
+- [Axios](https://axios-http.com);
 
 ## Run the project
 
